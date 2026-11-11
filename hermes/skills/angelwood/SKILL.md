@@ -23,7 +23,7 @@ content are not available here.
 
 ## Setup in Hermes
 
-This package adds one MCP server, `angelwood` (Streamable HTTP, `https://angelwood-api-uzil.onrender.com/mcp`), so
+This package adds one MCP server, `angelwood` (Streamable HTTP, `https://mcp.angelwood.io/mcp`), so
 its tools appear as `mcp__angelwood__<tool>`. Every tool is read-only. Hermes marks the server untrusted, so it would
 ask the user before any tool that changes something; today there are none.
 
@@ -33,7 +33,7 @@ in chat, and don't edit config or credential files for the user. They add this t
 ```yaml
 mcp_servers:
   angelwood:
-    url: https://angelwood-api-uzil.onrender.com/mcp
+    url: https://mcp.angelwood.io/mcp
     auth: oauth
     trust: untrusted
 ```

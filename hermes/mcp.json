@@ -3,7 +3,7 @@
   "mcpServers": {
     "angelwood": {
       "type": "streamable-http",
-      "url": "https://angelwood-api-uzil.onrender.com/mcp"
+      "url": "https://mcp.angelwood.io/mcp"
     }
   }
 }

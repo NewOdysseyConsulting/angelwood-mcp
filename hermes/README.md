@@ -7,7 +7,7 @@ office behind it: projects and tasks, time tracking, estimates, proposals and in
 This directory is a portable Agent Plugins v1 package for [Hermes Agent](https://hermes-agent.nousresearch.com)
 (`plugin.json`, `mcp.json` and `skills/`). It is configuration only: no local code runs. It gives Hermes:
 
-- **The Angelwood MCP server** (`angelwood`, Streamable HTTP at `https://angelwood-api-uzil.onrender.com/mcp`), hosted
+- **The Angelwood MCP server** (`angelwood`, Streamable HTTP at `https://mcp.angelwood.io/mcp`), hosted
   by Angelwood.
 - **The `angelwood:angelwood` skill**, which tells the agent when and how to use the tools.
 
@@ -25,7 +25,7 @@ Sign-in is OAuth with your own Angelwood account. Add this to your profile's `co
 ```yaml
 mcp_servers:
   angelwood:
-    url: https://angelwood-api-uzil.onrender.com/mcp
+    url: https://mcp.angelwood.io/mcp
     auth: oauth
     trust: untrusted
 ```
@@ -58,7 +58,7 @@ you before running it and refuse it in cron jobs and other runs where nobody can
 
 ## What to know before installing
 
-- **Network calls.** Every tool call goes to Angelwood's API at `angelwood-api-uzil.onrender.com` (operated by New
+- **Network calls.** Every tool call goes to Angelwood's MCP server at `mcp.angelwood.io` (operated by New
   Odyssey). The OAuth sign-in also talks to Angelwood's sign-in service at `clerk.angelwood.io`. Hermes contacts
   nothing else for this plugin. Angelwood's privacy policy: https://angelwood.io/privacy.
 - **What it reads.** Tool results contain your organization's client names and contact details, project and task

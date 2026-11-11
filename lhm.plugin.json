@@ -7,7 +7,7 @@
   "authorUrl": "https://angelwood.io",
   "homepage": "https://angelwood.io",
   "icon": "https://angelwood.io/apple-touch-icon.png",
-  "cloudEndpoint": "https://angelwood-api-uzil.onrender.com/mcp",
+  "cloudEndpoint": "https://mcp.angelwood.io/mcp",
   "tags": [
     "client-portal",
     "agency",

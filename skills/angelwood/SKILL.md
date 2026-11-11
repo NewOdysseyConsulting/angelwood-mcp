@@ -23,7 +23,7 @@ content are not available here.
 
 ## Setup
 
-MCP server (Streamable HTTP): `https://angelwood-api-uzil.onrender.com/mcp`
+MCP server (Streamable HTTP): `https://mcp.angelwood.io/mcp`
 
 Sign-in is OAuth with the user's own Angelwood account. Add the server URL with no headers; on first use the client
 opens a browser sign-in, and the agent then sees the organizations that user is an active member of. API keys are not
@@ -36,7 +36,7 @@ Example MCP server entry:
   "mcpServers": {
     "angelwood": {
       "type": "http",
-      "url": "https://angelwood-api-uzil.onrender.com/mcp"
+      "url": "https://mcp.angelwood.io/mcp"
     }
   }
 }

@@ -5,7 +5,7 @@ alwaysApply: false
 
 When the user asks which invoices are overdue or unpaid, what a client owes, what tasks are open or due for a client
 or project, what's assigned to them, or which projects are active in Angelwood, use the `angelwood` MCP server's
-tools (`https://angelwood-api-uzil.onrender.com/mcp`, OAuth sign-in with the user's Angelwood account) instead of
+tools (`https://mcp.angelwood.io/mcp`, OAuth sign-in with the user's Angelwood account) instead of
 guessing.
 
 - The tools are read-only. They cannot create, edit, send or delete anything; say so and point the user to the Angelwood app.
