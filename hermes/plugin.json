@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "angelwood",
+  "version": "1.0.0",
+  "description": "Connects Hermes to Angelwood, a client portal and client operations platform for agencies and service businesses: look up clients, projects, open tasks and invoices, see what each client owes and what is overdue. Read-only.",
+  "author": {
+    "name": "Angelwood (New Odyssey)",
+    "email": "support@angelwood.io",
+    "url": "https://angelwood.io"
+  },
+  "homepage": "https://angelwood.io",
+  "repository": "https://github.com/NewOdysseyConsulting/angelwood-mcp",
+  "license": "MIT",
+  "keywords": [
+    "angelwood",
+    "client-portal",
+    "agency",
+    "clients",
+    "projects",
+    "tasks",
+    "invoices",
+    "mcp"
+  ],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "angelwood": {
+          "trust": "untrusted"
+        }
+      }
+    }
+  }
+}

@@ -5,13 +5,15 @@ other service businesses. It gives each client a branded portal for updates, req
 office behind it: projects and tasks, time tracking, estimates, proposals and invoices.
 
 This repo holds the configuration, skill and rules for using Angelwood from AI assistants and editors (Claude, ChatGPT,
-Cursor and any MCP client). The server itself is hosted by Angelwood.
+Cursor, Hermes Agent and any MCP client). The server itself is hosted by Angelwood.
 
 **Server (Streamable HTTP):** `https://angelwood-api-uzil.onrender.com/mcp`
 
 ## Connect
 
 - **Claude / ChatGPT:** add `https://angelwood-api-uzil.onrender.com/mcp` as a custom connector.
+- **Hermes Agent:** the [`hermes/`](hermes/) package; see [`hermes/README.md`](hermes/README.md) to install and
+  sign in.
 - **Cursor:** add [`.cursor/mcp.json`](.cursor/mcp.json) from this repo (or copy the entry below) to your project or
   global MCP settings.
 - **Any MCP client:** use the entry in [`mcp.json`](mcp.json).
