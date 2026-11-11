@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "angelwood": {
+      "type": "http",
+      "url": "https://angelwood-api-uzil.onrender.com/mcp"
+    }
+  }
+}

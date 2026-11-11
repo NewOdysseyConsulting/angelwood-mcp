@@ -1,0 +1,47 @@
+{
+  "identifier": "angelwood",
+  "name": "Angelwood",
+  "version": "1.0.0",
+  "description": "Client portal and client operations for agencies and service businesses. Ask about your clients, projects, open tasks and invoices in Angelwood from any AI assistant: who owes what, what is overdue, and what is open for each client.",
+  "author": "Angelwood (New Odyssey)",
+  "authorUrl": "https://angelwood.io",
+  "homepage": "https://angelwood.io",
+  "icon": "https://angelwood.io/apple-touch-icon.png",
+  "cloudEndpoint": "https://angelwood-api-uzil.onrender.com/mcp",
+  "tags": [
+    "client-portal",
+    "agency",
+    "client-management",
+    "projects",
+    "invoices",
+    "professional-services"
+  ],
+  "tools": [
+    {
+      "name": "angelwood_whoami",
+      "description": "Returns the signed-in Angelwood user and the organizations (agencies) they belong to, with their role in each. Call it first when you belong to more than one organization."
+    },
+    {
+      "name": "angelwood_search_clients",
+      "description": "Lists the organization's active clients, optionally filtered by a search over client name and email. Use it to find a client_id for the other tools. Sorted by name."
+    },
+    {
+      "name": "angelwood_get_client_overview",
+      "description": "Returns one client with their contact details, their most recently updated projects, and an invoice summary: count and total per status, plus the outstanding balance still owed."
+    },
+    {
+      "name": "angelwood_list_projects",
+      "description": "Lists the organization's projects with their client, status, dates, hour budget and number of open tasks. Filter by client, status or a search over the project name. Most recently updated first."
+    },
+    {
+      "name": "angelwood_list_tasks",
+      "description": "Lists tasks across the organization's projects, soonest due date first. Returns open tasks (todo, in progress, blocked) by default; pass a status to see one status, including completed."
+    },
+    {
+      "name": "angelwood_list_invoices",
+      "description": "Lists the organization's invoices with client, project, amount, amount paid and balance due, newest first. Filter by status, client or project, or ask for overdue invoices only."
+    }
+  ],
+  "resources": [],
+  "prompts": []
+}

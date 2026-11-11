@@ -1,0 +1,39 @@
+{
+  "name": "angelwood",
+  "displayName": "Angelwood",
+  "version": "1.0.0",
+  "description": "Client portal and client operations for agencies and service businesses. Ask about your clients, projects, open tasks and invoices in Angelwood from any AI assistant: who owes what, what is overdue, and what is open for each client.",
+  "author": {
+    "name": "Angelwood (New Odyssey)",
+    "email": "support@angelwood.io",
+    "url": "https://angelwood.io"
+  },
+  "homepage": "https://angelwood.io",
+  "repository": "https://github.com/NewOdysseyConsulting/angelwood-mcp",
+  "license": "MIT",
+  "logo": "assets/angelwood.png",
+  "keywords": [
+    "client-portal",
+    "agency",
+    "client-management",
+    "projects",
+    "invoices",
+    "professional-services",
+    "mcp"
+  ],
+  "category": "productivity",
+  "tags": [
+    "client-portal",
+    "agency",
+    "mcp",
+    "invoices"
+  ],
+  "skills": "./skills/",
+  "rules": "./rules/",
+  "mcpServers": {
+    "angelwood": {
+      "type": "http",
+      "url": "https://angelwood-api-uzil.onrender.com/mcp"
+    }
+  }
+}

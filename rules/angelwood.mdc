@@ -1,0 +1,17 @@
+---
+description: Use Angelwood (angelwood.io) through its read-only MCP server to look up an agency's clients, projects, tasks and invoices
+alwaysApply: false
+---
+
+When the user asks which invoices are overdue or unpaid, what a client owes, what tasks are open or due for a client
+or project, what's assigned to them, or which projects are active in Angelwood, use the `angelwood` MCP server's
+tools (`https://angelwood-api-uzil.onrender.com/mcp`, OAuth sign-in with the user's Angelwood account) instead of
+guessing.
+
+- The tools are read-only. They cannot create, edit, send or delete anything; say so and point the user to the Angelwood app.
+- If a tool says the user belongs to several organizations, call `angelwood_whoami`, ask which one, and pass `organization_id` on every call.
+- Resolve names to ids first: `angelwood_search_clients` for a `client_id`, `angelwood_list_projects` for a `project_id`.
+- For overdue invoices use `angelwood_list_invoices` with `overdue_only: true`, not `status: "overdue"`.
+- `angelwood_list_tasks` returns open tasks by default and has no client filter; list the client's projects and query each `project_id`. `due_on_or_before` (`YYYY-MM-DD`) leaves out tasks with no due date.
+- List tools return at most 50 results per call (default 20). Use `total` for counts and page with `next_offset` while `has_more` is true before stating a sum.
+- Amounts carry no currency; don't add a symbol the user hasn't given you.
