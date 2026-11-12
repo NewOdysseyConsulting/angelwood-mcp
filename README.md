@@ -9,6 +9,24 @@ Cursor, Hermes Agent and any MCP client). The server itself is hosted by Angelwo
 
 **Server (Streamable HTTP):** `https://mcp.angelwood.io/mcp`
 
+## Features
+
+- **Hosted and remote.** Nothing to install or run: one URL over Streamable HTTP.
+- **Sign in with your Angelwood account.** OAuth sign-in; no API keys in config files.
+- **Read-only.** Six tools that look things up. Nothing can be created, changed or sent.
+- **Scoped to your organization.** Every call runs inside one organization you are an active member of.
+- **Works across clients.** Claude, ChatGPT, Cursor, Hermes Agent and any MCP client.
+- **Listed in the official MCP Registry** as `io.angelwood/angelwood`.
+
+## Use cases
+
+- **Chasing payment.** Ask which invoices are overdue and what each client owes before a billing call.
+- **Preparing for a client meeting.** Get one client's contact details, active projects and outstanding balance in
+  a single answer.
+- **Weekly planning.** List what is open, blocked or due this week across every project.
+- **Spotting overloaded projects.** See which active projects have the most open tasks.
+- **Answering "where are we?"** Look up a project's status and open work without opening the app.
+
 ## Connect
 
 - **Claude / ChatGPT:** add `https://mcp.angelwood.io/mcp` as a custom connector.
@@ -63,6 +81,7 @@ npx skills add NewOdysseyConsulting/angelwood-mcp
 ## Links
 
 - **Website:** [angelwood.io](https://angelwood.io)
+- **Documentation:** [angelwood.io/docs/mcp](https://angelwood.io/docs/mcp)
 - **Start a free trial:** [app.angelwood.io/sign-up](https://app.angelwood.io/sign-up)
 - **Pricing:** [angelwood.io/pricing](https://angelwood.io/pricing)
 - **Product:** [client portal for agencies](https://angelwood.io/client-portal-for-agencies) ·
