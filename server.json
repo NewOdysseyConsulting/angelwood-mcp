@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.angelwood/angelwood",
+  "title": "Angelwood",
+  "description": "Look up your agency's clients, projects, open tasks and invoices in Angelwood. Read-only.",
+  "version": "1.0.0",
+  "websiteUrl": "https://angelwood.io/docs/mcp",
+  "repository": {
+    "url": "https://github.com/NewOdysseyConsulting/angelwood-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.angelwood.io/mcp"
+    }
+  ]
+}
